@@ -84,48 +84,48 @@ if (vehicle_fleets>3){
 
 
 //-------------------------------------- Animation ------------------------------------------------//
-const observerDown = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('show-down');
-      } else {
-          entry.target.classList.remove('show-down');
-      }
-  });
-});
+// const observerDown = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//           entry.target.classList.add('show-down');
+//       } else {
+//           entry.target.classList.remove('show-down');
+//       }
+//   });
+// });
 
-const observerLeft = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-          setTimeout(() => {
-              entry.target.classList.add('show');
-          }, 500); // Delay for left elements
-      } else {
-          entry.target.classList.remove('show');
-      }
-  });
-});
+// const observerLeft = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//           setTimeout(() => {
+//               entry.target.classList.add('show');
+//           }, 500); // Delay for left elements
+//       } else {
+//           entry.target.classList.remove('show');
+//       }
+//   });
+// });
 
-const observerRight = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-          setTimeout(() => {
-              entry.target.classList.add('show');
-          }, 700); // Delay for right elements
-      } else {
-          entry.target.classList.remove('show');
-      }
-  });
-});
+// const observerRight = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//           setTimeout(() => {
+//               entry.target.classList.add('show');
+//           }, 700); // Delay for right elements
+//       } else {
+//           entry.target.classList.remove('show');
+//       }
+//   });
+// });
 
-const hiddenElementsDown = document.querySelectorAll('.hidden-down');
-hiddenElementsDown.forEach((el) => observerDown.observe(el));
+// const hiddenElementsDown = document.querySelectorAll('.hidden-down');
+// hiddenElementsDown.forEach((el) => observerDown.observe(el));
 
-const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
-hiddenElementsLeft.forEach((el) => observerLeft.observe(el));
+// const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+// hiddenElementsLeft.forEach((el) => observerLeft.observe(el));
 
-const hiddenElementsRight = document.querySelectorAll('.hidden-right');
-hiddenElementsRight.forEach((el) => observerRight.observe(el));
+// const hiddenElementsRight = document.querySelectorAll('.hidden-right');
+// hiddenElementsRight.forEach((el) => observerRight.observe(el));
 
 
 

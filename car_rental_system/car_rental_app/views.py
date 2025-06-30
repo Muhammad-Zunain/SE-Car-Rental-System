@@ -126,7 +126,6 @@ def carDetail(request, car_id):
                 message = {'success': 'success'}
                 return JsonResponse(message)
 
-                fname = request.user.first_name
 
         elif body.get('payment'):
             booking_date = datetime.now()
